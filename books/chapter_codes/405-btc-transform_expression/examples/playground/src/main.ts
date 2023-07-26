@@ -2,14 +2,14 @@ import { createApp, defineComponent, ref } from "chibivue";
 
 const App = defineComponent({
   setup() {
-    const count = ref(0);
-    return { count };
+    const count = ref(3);
+    const getMsg = (count: number) => `Count: ${count}`;
+    return { count, getMsg };
   },
 
   template: `
     <div class="container">
-      <p> Hello World! </p>
-      <p> Count: {{ count }} </p>
+      <p> {{ 'Message is "' + getMsg(count) + '"'}} </p>
     </div>
   `,
 });

@@ -10,10 +10,12 @@
   "author": "Ubugeeei <ubuge1122@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@babel/types": "^7.22.5",
     "@types/node": "^18.15.11"
   },
   "dependencies": {
     "@babel/parser": "^7.21.8",
+    "estree-walker": "^3.0.3",
     "magic-string": "^0.30.0"
   }
 }
